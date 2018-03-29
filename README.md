@@ -1,5 +1,8 @@
 # Starter template for vue/ts/webpack4
 
+Starter template inlcudes vue, typescript, webpack, vue-router
+
+
 ## Install
 
 ```bash

@@ -19,7 +19,6 @@
     "tslint-loader": "^3.6.0",
     "tslint-webpack-plugin": "^1.2.2",
     "typescript": "^2.7.2",
-    "vue": "^2.5.16",
     "vue-loader": "^14.2.2",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.2.0",
@@ -28,7 +27,9 @@
   },
   "dependencies": {
     "lodash": "^4.17.5",
+    "vue": "^2.5.16",
     "vue-class-component": "^6.2.0",
-    "vue-property-decorator": "^6.0.0"
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "^3.0.1"
   }
 }

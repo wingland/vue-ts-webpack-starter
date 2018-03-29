@@ -6,8 +6,7 @@
 </template>
 
 <script lang="ts">
-export { App as default } from './App';
-
+export { Home as default } from './Home';
 </script>
 
 <style lang="scss">

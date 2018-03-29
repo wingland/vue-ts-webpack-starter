@@ -4,7 +4,7 @@ import Component from 'vue-class-component';
 import { User } from '../meta/User';
 
 @Component
-export class App extends Vue {
+export class Home extends Vue {
   private user: User = new User('John Smith', 'john.smith@email.com');
 
   private title: string =  _.join(['Hello', 'webpack'], ' ');

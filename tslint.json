@@ -5,6 +5,7 @@
     ],
     "jsRules": {},
     "rules": {
+        "trailing-comma":false,
         "quotemark": [
             true,
             "single"
