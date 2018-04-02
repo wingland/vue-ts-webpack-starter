@@ -1,8 +1,15 @@
 <template>
-  <div class="my-app">
-   <h1>{{title}}</h1>
-   <p>Welcome, {{user.name}} ({{user.email}})</p>
-  </div>
+  <v-ons-page>
+      <v-ons-toolbar>
+        <div class="center">{{title}}</div>
+      </v-ons-toolbar>
+      <p style="text-align: center">
+        <v-ons-button @click="onBtnClicked">
+          Say Hello
+        </v-ons-button>
+      </p>
+    </v-ons-page>
+
 </template>
 
 <script lang="ts">
@@ -10,15 +17,4 @@ export { Home as default } from './Home';
 </script>
 
 <style lang="scss">
-.my-app {
-  text-align: center;
-  h1 {
-    font-size: 24px;
-    color: darkcyan;
-  }
-  p {
-    font-size: 14px;
-    color: grey;
-  }
-}
 </style>

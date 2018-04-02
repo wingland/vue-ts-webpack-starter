@@ -36,6 +36,27 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'typings-for-css-modules-loader?slient',
+            options: {
+              modules: false,
+              slient: false
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: 'url-loader',
+        options: {
+          limit: 100000,
+          name: '[name].[hash:7].[ext]'
+        }
       }
     ]
   },
