@@ -51,6 +51,7 @@ module.exports = {
       files: ['./src/**/*.ts']
     })
   ],
+  devtool: 'eval-source-map',
   resolve: {
     extensions: ['.ts', '.js', '.vue', '.json'],
     alias: {
