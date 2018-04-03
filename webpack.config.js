@@ -45,7 +45,7 @@ module.exports = {
             loader: 'typings-for-css-modules-loader?slient',
             options: {
               modules: false,
-              slient: false
+              slient: true
             }
           }
         ]

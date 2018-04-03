@@ -1,13 +1,14 @@
 <template>
   <v-ons-page>
       <v-ons-toolbar>
-        <div class="center">{{title}}</div>
+        <div class="center">Welcome</div>
       </v-ons-toolbar>
-      <p style="text-align: center">
-        <v-ons-button @click="onBtnClicked">
-          Say Hello
+      <section style="text-align: center;margin:0px 10px">
+        <h3>Welcome to App</h3>
+        <v-ons-button modifier="large" @click="onPressPushLogin">
+          Login
         </v-ons-button>
-      </p>
+      </section>
     </v-ons-page>
 
 </template>

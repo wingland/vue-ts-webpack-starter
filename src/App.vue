@@ -1,14 +1,11 @@
 <template>
-  <router-view class="view"></router-view>
+ <v-ons-navigator swipeable
+    :page-stack="pageStack"
+    :pop-page="goBack"
+  >
+  </v-ons-navigator>
 </template>
 
 <script lang="ts">
-
-import Vue from 'vue'
-import Component from 'vue-class-component'
-
-@Component
-export default class App extends Vue {
-  
-}
+export { App as default } from './App';
 </script>
