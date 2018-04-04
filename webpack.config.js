@@ -6,6 +6,11 @@ const TSLintPlugin = require('tslint-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
+  output: {
+    path: path.join(__dirname, '/dist'),
+    publicPath: '/',
+    filename: '[name].[hash].js'
+  },
   module: {
     rules: [
       {
@@ -42,7 +47,7 @@ module.exports = {
         use: [
           'style-loader',
           {
-            loader: 'typings-for-css-modules-loader?slient',
+            loader: 'typings-for-css-modules-loader',
             options: {
               modules: false,
               slient: true

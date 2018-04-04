@@ -15,12 +15,6 @@ export class App extends Vue {
   }
 
   private created() {
-    this.$store.commit('navigator/push', this.$route.matched[this.$route.matched.length - 1].components.default);
-    // this.$router.beforeEach((to, from, next) => {
-    //   if (to.matched.length > 0) {
-    //     this.pageStack.push(to.matched[to.matched.length - 1].components.default);
-    //   }
-    //   next();
-    // });
+    this.$store.commit('navigator/push', this.$route.matched.map( m => m.components.default));
   }
 }

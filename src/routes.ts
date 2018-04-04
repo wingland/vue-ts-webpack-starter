@@ -1,11 +1,16 @@
 import VueRouter, { RouteConfig } from 'vue-router';
-import Home from './components/Home.vue';
 import Login from './components/Login.vue';
+import SignUp from './components/SignUp.vue';
+import Welcome from './components/Welcome.vue';
 
 const routes: RouteConfig[] = [
-  { path: '/', redirect: '/home'},
-  { path: '/home', component: Home, name: 'Home' },
-  { path: '/login', component: Login, name: 'Login' }];
+  { path: '/', redirect: '/welcome'},
+  { path: '/welcome', component: Welcome, name: 'Welcome',
+  children: [
+    { path: 'login', component: Login, name: 'Login' },
+    { path: 'signup', component: SignUp, name: 'SignUp' }
+  ]
+}];
 export const router: VueRouter = new VueRouter({
   mode: 'history',
   routes

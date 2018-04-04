@@ -34,6 +34,7 @@
     "onsenui": "^2.9.2",
     "vue": "^2.5.16",
     "vue-class-component": "^6.2.0",
+    "vue-cookie": "^1.1.4",
     "vue-onsenui": "^2.5.1",
     "vue-property-decorator": "^6.0.0",
     "vue-router": "^3.0.1",
